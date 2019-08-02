@@ -10,6 +10,9 @@ const publicDirectoryPath = path.join(__dirname, "../public");
 const viewPath = path.join(__dirname, "../templates/views");
 const partialspath = path.join(__dirname, "../templates/partials");
 
+//setting port for deployment
+const port = process.env.PORT || 3030;
+
 //setting up handlebars engine and views loaction
 app.set("view engine", "hbs");
 app.set("views", viewPath);
@@ -86,8 +89,8 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3030, () => {
-  console.log("we are listening on port 3030");
+app.listen(port, () => {
+  console.log(`we are listening on port ${port}`);
 });
 
 //npm config get prefix

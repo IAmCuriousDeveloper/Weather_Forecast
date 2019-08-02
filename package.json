@@ -1,0 +1,25 @@
+{
+  "name": "weather_forecast",
+  "version": "1.0.0",
+  "description": "Application built with node.js",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PRASHANTPR7/Weather_Forecast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PRASHANTPR7/Weather_Forecast/issues"
+  },
+  "homepage": "https://github.com/PRASHANTPR7/Weather_Forecast#readme"
+}
